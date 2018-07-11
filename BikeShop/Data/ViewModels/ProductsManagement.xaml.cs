@@ -16,23 +16,20 @@ using System.Windows.Shapes;
 namespace BikeShop
 {
     /// <summary>
-    /// Interaction logic for Menu.xaml
+    /// Interaction logic for ProductsManagement.xaml
     /// </summary>
-    public partial class Menu : Page
+    public partial class ProductsManagement : Page
     {
-        public Menu()
+        public ProductsManagement()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Contact.xaml", UriKind.Relative));
-        }
+        ProductsFactory factory = new ProductsFactory();
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Discussion.xaml", UriKind.Relative));
+            dataGrid.ItemsSource = factory.FindProducts(textBox.Text);
         }
     }
 }

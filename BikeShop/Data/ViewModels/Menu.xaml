@@ -9,9 +9,9 @@
       Title="Menu">
 
     <Grid>
-        <Button Content="Products" HorizontalAlignment="Left" Margin="100,217,0,0" VerticalAlignment="Top" Width="75" Height="58"/>
-        <Button Content="Live Support" HorizontalAlignment="Left" Margin="270,217,0,0" VerticalAlignment="Top" Width="75" Height="58" Click="Button_Click_1"/>
-        <Button Content="Email support" HorizontalAlignment="Left" Margin="435,217,0,0" VerticalAlignment="Top" Width="75" Height="58" Click="Button_Click"/>
+        <Button Content="Products" HorizontalAlignment="Left" Margin="100,217,0,0" VerticalAlignment="Top" Width="90" Height="58" Click="Button_Click_2"/>
+        <Button Content="Live Support" HorizontalAlignment="Left" Margin="270,217,0,0" VerticalAlignment="Top" Width="90" Height="58" Click="Button_Click_1"/>
+        <Button Content="Email support" HorizontalAlignment="Left" Margin="435,217,0,0" VerticalAlignment="Top" Width="90" Height="58" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="110,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="400" FontSize="20" FontWeight="Bold" Text="Adventure works"/>
 
     </Grid>
